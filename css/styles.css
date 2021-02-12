@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#page-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    font-family: 'Muli', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Ovo', serif;
+}
+
+header, footer {
+    width: 100%;
+    max-height: 10vh;
+    padding: 0 5vh;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, dodgerblue, lightblue);
+    box-sizing: border-box;
+}
+header {
+    line-height: 5vh;
+}
+header img {
+    align-self: center;
+    max-width: 45%;
+    max-height: 108%
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    list-style-type: none;
+}
+header li {
+    margin: 0;
+    padding: 0 1rem;
+    height: auto;
+}
+
+footer p {
+    margin: 1vh 0;
+}
+header a, footer a {
+    color: white;
+}
+
+#settings {
+    width: 100%;
+    max-height: 10vh;
+    padding-left: 2.5vw;
+    padding-top: 2vh;
+    box-sizing: border-box;
+}
+
+#input_area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+#search_input {
+    height: 3vh;
+    min-width: 25vw;
+    max-width: 65vw;
+}
+#submit_button, #locate_button {
+    margin-left: 0.5vw;
+    height: 2.5em;
+}
+#result_area {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+#search_results {
+    margin: 0;
+}
+
+#map {
+    width: 95%;
+    height: 65vh;
+    margin: auto;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    #page-container {
+        min-height: 100vh;
+    }
+
+
+    header {
+        max-height: 15vh;
+    }
+    header img {
+        max-width: 55%;
+        max-height: 90%
+    }
+    footer {
+        max-height: 10vh;
+    }
+
+    #settings {
+        width: 100%;
+        height: 15vh;
+    }
+    #map {
+        width: 100%;
+        height: 60vh;
+    }
+    #search_results {
+        margin-top: 0.75vh;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 800px) and (max-height: 600px) and (orientation: landscape) {
+    #settings {
+        min-height: 15vh;
+    }
+    #result_area {
+        min-height: 2vh;
+    }
+    #map {
+        max-height: 55vh;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    header ul {
+        flex-direction: column;
+        line-height: 2.5vh;
+    }
+}

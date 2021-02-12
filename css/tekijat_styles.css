@@ -1,0 +1,41 @@
+main {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section {
+    display: block;
+    width: 280px;
+    max-height: 70vh;
+    border-radius: 10px;
+    background: rgb(30,144,255);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 57%, rgba(122,198,222,1) 100%);
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+section h1 {
+    text-align: center;
+}
+section img {
+    display: block;
+    height: 15rem;
+    width: auto;
+    margin: auto;
+}
+section li a {
+    color: white;
+}
+
+#video-container {
+    width: 60vw;
+    padding: 0;
+}
+video {
+    width: 100%;
+    height: auto;
+}
